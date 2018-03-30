@@ -1,0 +1,25 @@
+{
+    "variables": {
+        "title": "ueb开发文档",
+        "theme": "theme-gray",
+        "copyright": "Copyright 2017 modonglin"
+    },
+    "collapsible_menu": true,
+    "level_number": false,
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "all": false,
+            "vk": false,
+            "facebook": true,
+            "twitter": true,
+            "google": true,
+            "weibo": true
+        }
+
+    },
+    "plugins": [
+        "splitter",
+        "toggle-chapters"
+    ]
+}

@@ -1,0 +1,308 @@
+@charset "utf-8";
+//-----------------------------------------------------
+// global scss
+// modify based on normalize, mainly used in the Mobile project
+//-----------------------------------------------------
+
+/* normalize
+================================== */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 16px/1.5 tahoma, arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+}
+
+small,
+cite,
+code,
+em,
+th,
+i,
+b {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+input,
+select,
+textarea,
+button {
+    font-size: 1em;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+button,
+input {
+    &::-moz-focus-inner {
+        border: 0 none;
+        padding: 0;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input,
+textarea,
+select {
+    &:-webkit-autofill {
+        box-shadow: 0 0 0 999px #fff inset;
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    height: auto;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+input,
+button,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+iframe {
+    border: 0 none;
+}
+
+img {
+    display: inline-block;
+    -ms-interpolation-mode: bicubic;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+q {
+    &:before,
+    &:after {
+        content: "";
+    }
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+a,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.box{
+    position:relative;
+    width:500px;
+    margin:0 auto;
+    border:1px solid #666;
+    padding:20px 15px;
+    margin-top:20px;
+    background-color:#eee;
+    border-radius: 10px;
+}
+.box li{
+    width:100%;
+    padding-top:15px;
+}
+.box li div span{
+    color:red;
+}
+input{
+    margin-left:10px;
+    margin-top:5px;
+}
+.inp{
+    border:none;
+    outline: none;
+    width:465px;
+    border-bottom:1px solid #fff;
+    padding-left:10px;
+    background-color: #fff;
+}
+.inp:focus{
+    border-bottom:1px solid green;
+}
+.box .msg{
+    position:absolute;
+    display: none;
+    box-sizing: border-box;
+    top:100px;
+    left:-300px;
+    width:250px;
+    padding:10px;
+    background-color: green;
+    color:#fff;
+    border-radius: 10px;
+}
+.msg div{
+    margin-bottom:10px;
+    margin-left:10px;
+}
+.msg h2{
+    font-size: 18px;
+    color:red;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+.btn{
+    display: block;
+    margin:20px auto;
+    border:none;
+    width:200px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #f66;
+    border-radius: 15px;
+    color:#fff;
+}
+.hide{
+    display: none;
+    margin:20px auto;
+    border:none;
+    width:200px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #999;
+    border-radius: 15px;
+    color:#fff;
+}
